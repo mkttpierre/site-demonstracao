@@ -1,0 +1,324 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%230c0d10%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Arial%22 font-weight=%22900%22 font-style=%22italic%22 font-size=%2217%22 fill=%22%23e2582f%22 text-anchor=%22middle%22%3E{{SIGLA}}%3C/text%3E%3C/svg%3E">
+<!-- PREVIA: REMOVER AO VIRAR SITE OFICIAL (1 de 4): o noindex abaixo. Trocar por index,follow e apagar robots.txt e vercel.json (X-Robots-Tag). -->
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0c0d10"><title>{{NOME}} · {{TITULO_SEO}}</title><meta name="description" content="{{DESCRICAO_SEO}}"><meta property="og:title" content="{{NOME}} · {{TITULO_SEO}}"><meta property="og:description" content="{{DESCRICAO_SEO}}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- FONTES: o personalizar.sh troca as duas familias aqui e em --titulo/--corpo. -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><script>document.documentElement.classList.add('js')</script><style>
+/* TOKENS DE MARCA - o personalizar.sh troca --laranja, --laranja-claro e as duas fontes (--titulo, --corpo). Os fundos escuros ficam. */
+:root{--fundo:#0c0d10;--fundo2:#14161b;--fundo3:#08090b;--cartao:#1a1d23;--linha:#2a2e36;--texto:#f3f3f1;--suave:#a4a7ae;--laranja:#e2582f;--laranja-claro:#ff7a4d;--claro:#f3f2ef;--tinta:#121317;--titulo:'Barlow Condensed';--corpo:'Barlow';--ph1:#3a3e46;--ph2:#33373e;--ph-texto:#b4b8c0;--ease:cubic-bezier(.25,.46,.45,.94)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.55 var(--corpo),sans-serif;-webkit-text-size-adjust:100%}
+a{color:inherit}button,input{font:inherit}img{display:block;max-width:100%}
+.wrap{width:min(100% - 80px,1320px);margin:auto}
+.ruido{position:relative;isolation:isolate}
+.ruido:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+/* BLOCO DE FOTO (placeholder): cinza com o rotulo do que vai ali. Quando o arquivo existe em img/, a foto cobre o bloco.
+   Se o arquivo nao existe, o onerror do <img> esconde o icone quebrado e o bloco cinza fica. */
+.ph{position:relative;background:repeating-linear-gradient(135deg,var(--ph1) 0 16px,var(--ph2) 16px 32px)}
+.ph:after{content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--ph-texto);font:700 14px/1.35 var(--corpo),sans-serif;letter-spacing:.08em;text-transform:uppercase;white-space:pre-line;pointer-events:none}
+.ph img{position:relative;z-index:1}
+
+/* selo e topo */
+.selo{background:var(--fundo2);border-bottom:1px solid var(--linha);text-align:center;padding:8px 18px;font-size:15px;color:var(--suave)}
+.selo strong{color:var(--texto)}.selo-curto{display:none}
+.topo{border-bottom:1px solid var(--linha)}
+.nav{min-height:78px;display:flex;align-items:center;gap:30px}
+.marca{font:italic 800 30px/1 var(--titulo),sans-serif;letter-spacing:-.03em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+a.marca{display:inline-flex;align-items:center;min-height:44px}
+.marca span{color:var(--laranja);margin-right:.14em}
+nav{display:flex;gap:30px;margin-left:auto}
+nav a,.footer-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;text-decoration:none;transition:color .2s}
+nav a:hover,.text-link:hover{color:var(--laranja-claro)}
+
+/* botoes: sensacao magnetica + preenchimento deslizante */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1px solid var(--laranja);color:#fff;text-align:center;text-decoration:none;font-weight:700;line-height:1.2;
+background-color:var(--laranja);background-image:linear-gradient(var(--laranja-claro),var(--laranja-claro));background-repeat:no-repeat;background-position:left center;background-size:0 100%;
+transition:background-size .35s var(--ease),transform .25s var(--ease),border-color .25s}
+.btn.contorno{background-color:transparent;background-image:linear-gradient(var(--laranja),var(--laranja));border-color:var(--linha);color:inherit}
+.btn.grande{min-height:58px;padding:14px 28px;font-size:18px;font-weight:800}
+.pequeno{min-height:44px;padding:10px 18px}
+@media(hover:hover){.btn:hover{background-size:100% 100%;transform:translateY(-1px) scale(1.03);border-color:var(--laranja-claro)}.btn.contorno:hover{border-color:var(--laranja);color:#fff}.text-link:hover{transform:translateY(-1px)}}
+.btn:active{transform:scale(.98)}
+.text-link{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:5px;transition:transform .2s,color .2s}
+
+/* tipografia */
+.label{color:var(--laranja);font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin:0 0 15px;font-size:15px}
+h1,h2,h3,.frase,.preco{font-family:var(--titulo),sans-serif}
+h2,h3,.frase,.lead,.sub,.label,.trigger,.fonte{overflow-wrap:anywhere}
+h1,h2,h3,.frase{font-style:italic;font-weight:800;text-transform:uppercase}
+h2{font-size:clamp(46px,6vw,92px);line-height:.93;letter-spacing:-.035em;margin:0 0 20px;text-wrap:balance}
+h3{font-size:27px;line-height:1.05;margin:0}
+.sub{color:var(--suave);max-width:660px;margin:0 0 36px;font-size:18px}
+.fonte{color:var(--suave);font-size:15px;margin:20px 0}
+.sec{padding:104px 0}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-areas:"cabeca imagem" "cta imagem" "provas provas";column-gap:56px;align-items:center;padding-top:64px;padding-bottom:56px}
+.hero-cabeca{grid-area:cabeca;align-self:end}.hero-cta{grid-area:cta;align-self:start}
+.hero h1{font-size:clamp(72px,9vw,140px);line-height:.82;letter-spacing:-.045em;margin:0 0 26px;overflow-wrap:anywhere}
+.hero h1 span{color:var(--laranja);margin-right:.04em}
+.frase{font-size:clamp(28px,2.9vw,44px);line-height:1.02;max-width:600px;margin:0 0 22px;border-left:5px solid var(--laranja);padding-left:18px;text-wrap:balance}
+.lead{color:var(--suave);font-size:18px;max-width:560px;margin:0 0 26px}
+.acoes{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.trigger{margin:14px 0 0;color:var(--texto);font-size:16px;display:flex;gap:10px;align-items:flex-start}
+.trigger:before{content:"";flex:0 0 10px;height:10px;margin-top:7px;background:var(--laranja);transform:rotate(45deg) scale(.8)}
+.hero-imagem{grid-area:imagem;overflow:hidden;min-height:540px;clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,40px 100%,0 calc(100% - 40px))}
+.hero-imagem img{width:100%;height:540px;object-fit:cover;transform-origin:60% 60%}
+.provas{grid-area:provas;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha);margin-top:44px;padding-top:26px;gap:20px}
+.provas div{display:flex;align-items:baseline;gap:12px}
+.provas strong{font:italic 800 40px/1 var(--titulo);color:var(--laranja);white-space:nowrap}
+.provas span{color:var(--suave)}
+
+/* faixa */
+.faixa{background:var(--laranja);overflow:hidden;color:#fff}
+.marquee{display:flex;width:max-content;animation:marquee 38s linear infinite}
+.marquee span{font:italic 800 20px var(--titulo);text-transform:uppercase;white-space:nowrap;padding:13px 20px}
+.marquee b{color:var(--tinta);margin-left:28px}
+
+/* estoque */
+.trilho{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.moto{background:var(--cartao);min-width:0;transition:transform .3s var(--ease)}
+.moto .foto{aspect-ratio:1/1}
+.moto img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+.moto-info{padding:20px}
+.moto-info p{color:var(--suave);margin:10px 0}
+.preco{display:block;color:var(--laranja);font-size:36px;font-weight:800;line-height:1;margin-bottom:18px}
+.moto .btn{width:100%}
+@media(hover:hover){.moto:hover{transform:translateY(-4px)}}
+.fecho{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:34px}
+.fecho .fonte{margin:0;flex:1 1 320px;max-width:560px}
+
+/* DOR / manifesto */
+.dor{background:var(--fundo3);overflow:hidden;padding:120px 0;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.dor .fantasma{position:absolute;right:-2vw;bottom:-6vw;z-index:-1;font:italic 800 clamp(220px,34vw,520px)/.8 var(--titulo);color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.05);letter-spacing:-.05em;user-select:none;pointer-events:none}
+.dor blockquote{overflow-wrap:anywhere;margin:0 0 28px;font:italic 700 clamp(30px,4.3vw,62px)/1.07 var(--titulo),sans-serif;letter-spacing:-.01em;max-width:1120px;text-wrap:pretty}
+.dor .w{display:inline-block}
+.dor .hl{color:var(--laranja)}
+.js .dor .w{opacity:.14;transition:opacity .5s calc(var(--i)*55ms)}
+.js .dor .citacao.visivel .w{opacity:1}
+.dor .autor{color:var(--suave);margin:0 0 36px;font-size:17px}.dor .autor b{color:var(--texto)}
+.dor .acoes{align-items:flex-start;flex-direction:column;gap:0}
+
+/* servicos (zona clara) */
+.servicos{background:var(--claro);color:var(--tinta)}
+.servicos .sub,.servicos .fonte{color:#55565b}
+.servicos-topo{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:36px}
+.servicos-topo .sub{margin:0}
+.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px}
+.servico{display:flex;gap:20px;border-top:2px solid var(--tinta);padding:26px 0 30px}
+.servico>span{color:var(--laranja);font:italic 800 56px/.9 var(--titulo);min-width:62px}
+.servico p{margin:8px 0 0}
+.servico-cta{align-items:center}.servico-cta .btn{width:100%}
+
+/* loja */
+.mosaico{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:12px}
+.mosaico figure{margin:0;overflow:hidden}
+.mosaico figure:first-child{grid-row:span 2}.mosaico figure:last-child{grid-column:span 2}
+.mosaico img{width:100%;height:100%;object-fit:cover}
+
+/* avaliacoes */
+.reviews-section,.chegar-section{background:var(--fundo2)}
+.nota{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:56px;align-items:start}
+.nota-grande strong{overflow-wrap:anywhere;display:block;font:italic 800 clamp(120px,15vw,220px)/.8 var(--titulo);color:var(--laranja);letter-spacing:-.05em}
+.nota-grande .estrelas{display:block;color:var(--laranja);letter-spacing:.14em;font-size:22px;margin:18px 0 6px}
+.nota-grande p{margin:0;color:var(--suave)}
+.reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.review{background:var(--cartao);margin:0;padding:30px;display:flex;flex-direction:column;border-top:3px solid var(--laranja)}
+.aspas{display:block;height:34px;font:800 65px/.8 var(--titulo);color:var(--laranja)}
+blockquote{margin:10px 0 20px;flex:1}
+figcaption{font-weight:700}
+.reviews-section .acoes{margin-top:34px}
+
+/* contato */
+.contato{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+form{background:var(--cartao);padding:32px}
+fieldset{border:0;padding:0;margin:0 0 24px;min-width:0}
+legend,label{font-weight:700;display:block;margin-bottom:10px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:transparent;border:1px solid var(--linha);color:var(--texto);min-height:44px;padding:9px 14px;cursor:pointer;transition:background .2s,border-color .2s}
+.chip[aria-pressed=true]{border-color:var(--laranja);background:var(--laranja);color:#fff}
+input{width:100%;min-height:48px;background:var(--fundo);border:1px solid var(--linha);color:var(--texto);padding:10px 12px;margin:0 0 22px;font-size:16px}
+.mensagem{background:var(--fundo);padding:18px;margin-bottom:18px}
+.mensagem p{white-space:pre-line;margin:8px 0 0;overflow-wrap:anywhere}
+.contato #enviar{width:100%}
+
+/* como chegar */
+.chegar{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:60px}
+.chegar iframe{width:100%;height:380px;border:0}
+.chegar table{border-collapse:collapse;width:100%;max-width:480px;margin-top:24px}
+.chegar th,.chegar td{border-bottom:1px solid var(--linha);padding:9px 0;text-align:left}
+.chegar td{text-align:right}
+footer{padding:65px 0}
+.rodape{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.rodape .fonte{grid-column:1/-1}
+.footer-link{display:flex;justify-content:flex-start}
+
+/* barra fixa (celular) */
+.fix{display:none}
+
+/* movimento */
+.h-in{animation:subir .75s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--d,0)*90ms)}
+.hero-imagem img{animation:zoom 18s ease-in-out infinite alternate}
+@keyframes subir{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.07)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.js .revelar{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .revelar.visivel{opacity:1;transform:none}
+
+/* MOBILE */
+@media(max-width:899px){
+body{padding-bottom:76px}
+.wrap{width:calc(100% - 36px)}
+.selo{padding:7px 16px;font-size:14px}.selo-longo{display:none}.selo-curto{display:inline}
+.nav{min-height:64px;justify-content:space-between;gap:12px}nav{display:none}.marca{font-size:26px}
+.hero{display:flex;flex-direction:column;align-items:stretch;gap:0;padding-top:22px;padding-bottom:34px}
+.hero-cabeca,.hero-cta{align-self:stretch}.hero .label{letter-spacing:.07em}.hero-cabeca{order:1}.provas{order:2}.hero-cta{order:3}.hero-imagem{order:4}
+.hero .label{margin-bottom:10px;font-size:14px}
+.hero h1{font-size:clamp(62px,18vw,84px);margin-bottom:14px}
+.frase{font-size:clamp(25px,7.2vw,32px);margin-bottom:0;padding-left:14px;border-left-width:4px}
+.provas{margin-top:18px;padding-top:16px;gap:8px;border-top:1px solid var(--linha);margin-bottom:20px}
+.provas div{display:block}.provas strong{font-size:27px;display:block;margin-bottom:2px;white-space:normal;overflow-wrap:anywhere}.provas span{font-size:14px;line-height:1.25;display:block}
+.lead{font-size:16px;margin-bottom:18px}
+.hero-cta .acoes{flex-direction:column;align-items:stretch;gap:10px}.hero-cta .btn{width:100%}
+.trigger{font-size:15px;margin-top:12px}
+.hero-imagem{margin-top:26px;min-height:250px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px))}
+.hero-imagem img{height:250px}
+.sec{padding:64px 0}
+h2{font-size:clamp(44px,13.5vw,56px)}
+.sub{font-size:16px;margin-bottom:26px}
+.trilho{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;overscroll-behavior-x:contain;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.moto{flex:0 0 78%;scroll-snap-align:start}
+.fecho{margin-top:14px}.fecho .btn{width:100%}
+.dor{padding:72px 0}
+.dor blockquote{font-size:clamp(27px,7.6vw,34px);line-height:1.08}
+.dor .acoes .btn{width:100%}
+.servicos-topo{display:block;margin-bottom:12px}.servicos-topo .sub{margin-bottom:8px}
+.servicos-grid{grid-template-columns:1fr}
+.servico{padding:18px 0 20px}.servico>span{font-size:46px;min-width:54px}
+
+.mosaico{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px;gap:8px}
+.mosaico figure:first-child{grid-row:auto}.mosaico figure:last-child{grid-column:auto}
+.nota{display:block}
+.nota-grande{display:flex;align-items:flex-end;flex-wrap:wrap;gap:0 18px;margin-bottom:26px}
+.nota-grande strong{font-size:112px}.nota-grande .estrelas{margin:0 0 4px;font-size:20px;width:100%;order:3}
+.nota-grande p{padding-bottom:12px;flex:1 1 120px}
+.reviews{grid-template-columns:1fr}.review{padding:24px}
+.reviews-section .acoes .btn{width:100%}
+.contato,.chegar{display:block}
+.contato form{margin-top:25px;padding:22px}
+.chegar iframe{height:280px;margin-top:30px}
+.chegar .acoes .btn{flex:1 1 100%}
+.rodape{display:block}.rodape>div+div{margin-top:20px}
+.fix{position:fixed;display:flex;bottom:0;left:0;right:0;z-index:5;padding:8px 18px max(8px,env(safe-area-inset-bottom));background:var(--cartao);border-top:1px solid var(--linha);gap:10px;transition:transform .3s var(--ease)}
+.fix .btn:first-child{flex:1}
+.fix.oculta{transform:translateY(110%)}
+body.digitando .fix{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .revelar,.js .dor .w{opacity:1!important;transform:none!important}}
+</style></head><body data-tel="{{WHATSAPP}}" data-abertura="Olá! Vim pelo site da {{NOME}}.">
+<!-- PREVIA: REMOVER AO VIRAR SITE OFICIAL (2 de 4): o selo de previa abaixo (e o .selo no CSS, se quiser). -->
+<div class="selo"><strong>Prévia de site</strong><span class="selo-longo"> · Prévia criada por {{AUTOR_PREVIA}} para {{NOME}}. Fotos e textos são públicos da própria loja.</span><span class="selo-curto"> · {{AUTOR_PREVIA}}</span></div>
+<header class="topo"><div class="wrap nav"><a href="#inicio" class="marca"><span>{{MARCA_1}}</span> {{MARCA_2}}</a><nav aria-label="Navegação"><a href="#estoque">{{NAV_ESTOQUE}}</a><a href="#loja">Loja</a><a href="#avaliacoes">Avaliações</a><a href="#chegar">Como chegar</a></nav><a class="btn pequeno" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></header>
+<main id="inicio">
+<section class="hero-sec ruido"><div class="hero wrap">
+<div class="hero-cabeca"><p class="label h-in" style="--d:0">{{HERO_LABEL}}</p><h1 class="h-in" style="--d:1"><span>{{MARCA_1}}</span> {{MARCA_2}}</h1><p class="frase h-in" style="--d:2">{{HERO_FRASE}}</p></div>
+<div class="provas h-in" style="--d:3"><div><strong>{{NOTA}}</strong><span>no Google · {{N_AVALIACOES}} avaliações</span></div><div><strong>{{SEGUIDORES}}</strong><span>seguidores no Instagram</span></div><div><strong>{{PROVA_3_TITULO}}</strong><span>{{PROVA_3_TEXTO}}</span></div></div>
+<div class="hero-cta h-in" style="--d:4"><p class="lead">{{HERO_LEAD}}</p><div class="acoes"><a class="btn grande" href="https://wa.me/{{WHATSAPP}}" data-msg="{{MSG_PRINCIPAL}}" target="_blank" rel="noopener noreferrer">{{CTA_PRINCIPAL}}</a><a class="btn contorno grande" href="#estoque">{{CTA_SECUNDARIO}}</a></div><p class="trigger">{{HERO_TRIGGER}}</p></div>
+<div class="hero-imagem ph h-in" style="--d:2" data-ph="Foto do hero&#10;img/hero.jpg · 1200x900&#10;showroom ou fachada, horizontal"><img src="img/hero.jpg" alt="{{HERO_ALT}}" width="1200" height="900" fetchpriority="high" onerror="this.style.display='none'"></div>
+</div></section>
+<div class="faixa" aria-hidden="true"><div class="marquee"><span>{{FAIXA_1}} <b>◆</b></span><span>{{FAIXA_2}} <b>◆</b></span><span>{{FAIXA_3}} <b>◆</b></span><span>{{FAIXA_4}} <b>◆</b></span><span>{{FAIXA_5}} <b>◆</b></span><span>{{FAIXA_6}} <b>◆</b></span><span>{{FAIXA_7}} <b>◆</b></span><span>{{FAIXA_8}} <b>◆</b></span><span>{{FAIXA_9}} <b>◆</b></span><span>{{FAIXA_1}} <b>◆</b></span><span>{{FAIXA_2}} <b>◆</b></span><span>{{FAIXA_3}} <b>◆</b></span><span>{{FAIXA_4}} <b>◆</b></span><span>{{FAIXA_5}} <b>◆</b></span><span>{{FAIXA_6}} <b>◆</b></span><span>{{FAIXA_7}} <b>◆</b></span><span>{{FAIXA_8}} <b>◆</b></span><span>{{FAIXA_9}} <b>◆</b></span></div></div>
+
+<section id="estoque" class="sec wrap revelar"><p class="label">{{ESTOQUE_LABEL}}</p><h2>{{ESTOQUE_TITULO}}</h2><p class="sub">{{ESTOQUE_SUB}}</p>
+<!-- ITENS: 8 cartoes. Para mudar a quantidade, copie ou apague um bloco <article class="moto"> inteiro (e renumere ITEM_n e img/item-n.jpg). Preco e km: so os que o cliente confirmou. -->
+<div class="trilho"><article class="moto"><div class="foto ph" data-ph="Foto do item 1&#10;img/item-1.jpg · 640x640&#10;quadrada"><img src="img/item-1.jpg" alt="{{ITEM_1_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_1_NOME}}</h3><p>{{ITEM_1_DETALHE}}</p><strong class="preco">{{ITEM_1_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_1_NOME}} ({{ITEM_1_DETALHE}}) por {{ITEM_1_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 2&#10;img/item-2.jpg · 640x640&#10;quadrada"><img src="img/item-2.jpg" alt="{{ITEM_2_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_2_NOME}}</h3><p>{{ITEM_2_DETALHE}}</p><strong class="preco">{{ITEM_2_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_2_NOME}} ({{ITEM_2_DETALHE}}) por {{ITEM_2_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 3&#10;img/item-3.jpg · 640x640&#10;quadrada"><img src="img/item-3.jpg" alt="{{ITEM_3_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_3_NOME}}</h3><p>{{ITEM_3_DETALHE}}</p><strong class="preco">{{ITEM_3_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_3_NOME}} ({{ITEM_3_DETALHE}}) por {{ITEM_3_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 4&#10;img/item-4.jpg · 640x640&#10;quadrada"><img src="img/item-4.jpg" alt="{{ITEM_4_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_4_NOME}}</h3><p>{{ITEM_4_DETALHE}}</p><strong class="preco">{{ITEM_4_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_4_NOME}} ({{ITEM_4_DETALHE}}) por {{ITEM_4_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 5&#10;img/item-5.jpg · 640x640&#10;quadrada"><img src="img/item-5.jpg" alt="{{ITEM_5_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_5_NOME}}</h3><p>{{ITEM_5_DETALHE}}</p><strong class="preco">{{ITEM_5_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_5_NOME}} ({{ITEM_5_DETALHE}}) por {{ITEM_5_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 6&#10;img/item-6.jpg · 640x640&#10;quadrada"><img src="img/item-6.jpg" alt="{{ITEM_6_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_6_NOME}}</h3><p>{{ITEM_6_DETALHE}}</p><strong class="preco">{{ITEM_6_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_6_NOME}} ({{ITEM_6_DETALHE}}) por {{ITEM_6_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 7&#10;img/item-7.jpg · 640x640&#10;quadrada"><img src="img/item-7.jpg" alt="{{ITEM_7_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_7_NOME}}</h3><p>{{ITEM_7_DETALHE}}</p><strong class="preco">{{ITEM_7_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_7_NOME}} ({{ITEM_7_DETALHE}}) por {{ITEM_7_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article><article class="moto"><div class="foto ph" data-ph="Foto do item 8&#10;img/item-8.jpg · 640x640&#10;quadrada"><img src="img/item-8.jpg" alt="{{ITEM_8_ALT}}" width="640" height="640" loading="lazy" onerror="this.style.display='none'"></div><div class="moto-info"><h3>{{ITEM_8_NOME}}</h3><p>{{ITEM_8_DETALHE}}</p><strong class="preco">{{ITEM_8_PRECO}}</strong><a class="btn contorno" href="https://wa.me/{{WHATSAPP}}" data-msg="Ainda está disponível: {{ITEM_8_NOME}} ({{ITEM_8_DETALHE}}) por {{ITEM_8_PRECO}}?" target="_blank" rel="noopener noreferrer">{{BTN_ITEM}}</a></div></article></div><div class="fecho"><a class="btn grande" href="https://wa.me/{{WHATSAPP}}" data-msg="{{MSG_LISTA}}" target="_blank" rel="noopener noreferrer">{{CTA_LISTA}}</a><p class="fonte">{{ESTOQUE_FONTE}}</p></div></section>
+
+<section id="destaque" class="dor ruido"><span class="fantasma" aria-hidden="true">{{SIGLA}}</span><div class="wrap"><p class="label">{{DOR_LABEL}}</p>
+<!-- AVALIACAO EM DESTAQUE: o texto vai inteiro em .texto; as palavras que acendem em laranja ficam em data-hl, separadas por virgula. O JS separa as palavras e acende uma a uma. Sem foto atras. -->
+<div class="citacao"><blockquote><span class="aspas-ini" aria-hidden="true">“</span><span class="texto" data-hl="{{AVALIACAO_DESTAQUE_PALAVRAS}}">{{AVALIACAO_DESTAQUE_TEXTO}}</span><span aria-hidden="true">”</span></blockquote></div><p class="autor"><b>{{AVALIACAO_DESTAQUE_NOME}}</b> · avaliação real no Google</p><div class="acoes"><a class="btn grande" href="https://wa.me/{{WHATSAPP}}" data-msg="{{DOR_MSG}}" target="_blank" rel="noopener noreferrer">{{DOR_CTA}}</a><p class="trigger">{{DOR_TRIGGER}}</p></div></div></section>
+
+<section id="servicos" class="servicos sec"><div class="wrap revelar"><div class="servicos-topo"><div><p class="label">{{SERV_LABEL}}</p><h2>{{SERV_TITULO}}</h2><p class="sub">{{SERV_SUB}}</p></div></div><div class="servicos-grid"><article class="servico"><span>01</span><div><h3>{{SERV_1_TITULO}}</h3><p>{{SERV_1_TEXTO}}</p></div></article><article class="servico"><span>02</span><div><h3>{{SERV_2_TITULO}}</h3><p>{{SERV_2_TEXTO}}</p></div></article><article class="servico"><span>03</span><div><h3>{{SERV_3_TITULO}}</h3><p>{{SERV_3_TEXTO}}</p></div></article><article class="servico"><span>04</span><div><h3>{{SERV_4_TITULO}}</h3><p>{{SERV_4_TEXTO}}</p></div></article><article class="servico"><span>05</span><div><h3>{{SERV_5_TITULO}}</h3><p>{{SERV_5_TEXTO}}</p></div></article><div class="servico servico-cta"><a class="btn grande" href="https://wa.me/{{WHATSAPP}}" data-msg="{{SERV_MSG}}" target="_blank" rel="noopener noreferrer">{{SERV_CTA}}</a></div></div><p class="fonte">{{SERV_FONTE}}</p></div></section>
+
+<section id="loja" class="sec wrap revelar"><p class="label">{{LOJA_LABEL}}</p><h2>{{LOJA_TITULO}}</h2><p class="sub">{{LOJA_SUB}}</p><div class="mosaico"><figure class="ph" data-ph="Foto da loja 1 (grande)&#10;img/loja1.jpg · 900x675"><img src="img/loja1.jpg" alt="{{LOJA_1_ALT}}" width="900" height="675" loading="lazy" onerror="this.style.display='none'"></figure><figure class="ph" data-ph="Foto da loja 2&#10;img/loja2.jpg · 900x415"><img src="img/loja2.jpg" alt="{{LOJA_2_ALT}}" width="900" height="415" loading="lazy" onerror="this.style.display='none'"></figure><figure class="ph" data-ph="Fachada&#10;img/fachada.jpg · 900x675"><img src="img/fachada.jpg" alt="{{LOJA_3_ALT}}" width="900" height="675" loading="lazy" onerror="this.style.display='none'"></figure><figure class="ph" data-ph="Foto da loja 3 (larga)&#10;img/loja3.jpg · 900x675"><img src="img/loja3.jpg" alt="{{LOJA_4_ALT}}" width="900" height="675" loading="lazy" onerror="this.style.display='none'"></figure></div><p class="fonte">{{LOJA_FONTE}}</p></section>
+
+<section id="avaliacoes" class="sec reviews-section"><div class="wrap revelar"><p class="label">Avaliações no Google</p><h2>{{AVAL_TITULO}}</h2><div class="nota"><div class="nota-grande" data-conta="1"><strong>{{NOTA}}</strong><p><span class="estrelas" aria-hidden="true">★★★★★</span>{{N_AVALIACOES}} avaliações no Google</p></div><div class="reviews"><figure class="review"><span class="aspas">“</span><blockquote>{{AVALIACAO_1_TEXTO}}</blockquote><figcaption>{{AVALIACAO_1_NOME}}</figcaption></figure><figure class="review"><span class="aspas">“</span><blockquote>{{AVALIACAO_2_TEXTO}}</blockquote><figcaption>{{AVALIACAO_2_NOME}}</figcaption></figure></div></div><p class="fonte">Avaliações reais no Google, com o nome abreviado. A avaliação de {{AVALIACAO_DESTAQUE_NOME}} está no destaque acima.</p><div class="acoes"><a class="btn grande" href="https://wa.me/{{WHATSAPP}}" data-msg="{{AVAL_MSG}}" target="_blank" rel="noopener noreferrer">{{AVAL_CTA}}</a></div></div></section>
+
+<section id="contato" class="sec wrap contato revelar"><div><p class="label">{{CONTATO_LABEL}}</p><h2>Monte sua mensagem.</h2><p class="sub">Escolha o que você quer e a mensagem chega pronta no WhatsApp da loja. É só apertar enviar.</p></div><form id="form-contato" data-rotulo-item="{{ITEM_ROTULO}}"><fieldset><legend>Quero</legend><div class="chips"><button type="button" class="chip" data-group="intencoes" aria-pressed="true">{{INTENCAO_1}}</button><button type="button" class="chip" data-group="intencoes" aria-pressed="false">{{INTENCAO_2}}</button><button type="button" class="chip" data-group="intencoes" aria-pressed="false">{{INTENCAO_3}}</button><button type="button" class="chip" data-group="intencoes" aria-pressed="false">{{INTENCAO_4}}</button></div></fieldset><fieldset><legend>{{TIPO_LEGENDA}}</legend><div class="chips"><button type="button" class="chip" data-group="tipos" aria-pressed="true">{{TIPO_1}}</button><button type="button" class="chip" data-group="tipos" aria-pressed="false">{{TIPO_2}}</button><button type="button" class="chip" data-group="tipos" aria-pressed="false">{{TIPO_3}}</button><button type="button" class="chip" data-group="tipos" aria-pressed="false">{{TIPO_4}}</button></div></fieldset><label for="moto">{{CAMPO_ITEM_LABEL}}</label><input id="moto" name="moto" autocomplete="off" placeholder="{{CAMPO_ITEM_EXEMPLO}}"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name"><div class="mensagem"><strong>Prévia da mensagem</strong><p id="mensagem" aria-live="polite"></p></div><a id="enviar" class="btn grande" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener noreferrer">Enviar pelo WhatsApp</a><p class="fonte">Nada do que você escreve fica gravado neste site.</p><a class="text-link" href="tel:{{TELEFONE}}">Prefere ligar? {{TELEFONE_EXIBIDO}}</a></form></section>
+
+<section id="chegar" class="sec chegar-section"><div class="wrap chegar revelar"><div><p class="label">Como chegar</p><h2>{{ENDERECO_TITULO}}</h2><p>{{ENDERECO_LINHA1}}<br>{{ENDERECO_LINHA2}}</p><table><tr><th scope="row">{{HORARIO_1_DIAS}}</th><td>{{HORARIO_1_HORAS}}</td></tr><tr><th scope="row">{{HORARIO_2_DIAS}}</th><td>{{HORARIO_2_HORAS}}</td></tr><tr><th scope="row">{{HORARIO_3_DIAS}}</th><td>{{HORARIO_3_HORAS}}</td></tr></table><p class="fonte">{{HORARIO_FONTE}}</p><div class="acoes"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination={{MAPS_DESTINO}}" target="_blank" rel="noopener noreferrer">Traçar rota</a><a class="btn contorno" href="{{MAPS_URL}}" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a></div></div><iframe src="https://www.google.com/maps?q={{MAPS_DESTINO}}&amp;output=embed" title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
+</main>
+<footer><div class="wrap rodape"><div><div class="marca"><span>{{MARCA_1}}</span> {{MARCA_2}}</div><p>{{ENDERECO_LINHA1}}<br>{{ENDERECO_LINHA2}}</p></div><div><a class="footer-link" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="footer-link" href="tel:{{TELEFONE}}">{{TELEFONE_EXIBIDO}}</a><a class="footer-link" href="https://www.instagram.com/{{INSTAGRAM}}/" target="_blank" rel="noopener noreferrer">@{{INSTAGRAM}}</a></div>
+<!-- PREVIA: REMOVER AO VIRAR SITE OFICIAL (3 de 4): a linha de credito da previa abaixo. -->
+<p class="fonte">Prévia criada por {{AUTOR_PREVIA}} para {{NOME}}. Fotos e textos são públicos da própria loja.</p></div></footer>
+<!-- PREVIA: REMOVER AO VIRAR SITE OFICIAL (4 de 4): antes de publicar, conferir se sobrou algum placeholder (duas chaves abertas seguidas, com letras maiusculas) em qualquer texto deste arquivo. -->
+<div class="fix"><a class="btn" href="https://wa.me/{{WHATSAPP}}" data-msg="{{MSG_PRINCIPAL}}" target="_blank" rel="noopener noreferrer">{{CTA_BARRA}}</a><a class="btn contorno" href="tel:{{TELEFONE}}">Ligar</a></div>
+<script>
+(function(){
+  var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var body = document.body, tel = body.dataset.tel, abertura = body.dataset.abertura;
+  var form = document.querySelector('#form-contato');
+  var wa = function(msg){ return 'https://wa.me/' + tel + '?text=' + encodeURIComponent(msg); };
+
+  // todo link com data-msg abre o WhatsApp com a abertura + a mensagem (sem URL codificada na mao)
+  document.querySelectorAll('a[data-msg]').forEach(function(a){ a.href = wa(abertura + ' ' + a.dataset.msg); });
+
+  // formulario: monta a mensagem do WhatsApp a partir dos botoes e campos
+  var sel = function(g){ return form.querySelector('[data-group="'+g+'"][aria-pressed="true"]').textContent.trim(); };
+  var legTipo = form.querySelector('[data-group="tipos"]').closest('fieldset').querySelector('legend').textContent.trim();
+  var upd = function(){
+    var item = form.elements.moto.value.trim(), nome = form.elements.nome.value.trim();
+    var msg = abertura + '\nQuero: ' + sel('intencoes') + '\n' + legTipo + ': ' + sel('tipos') + (item ? '\n' + form.dataset.rotuloItem + ': ' + item : '') + (nome ? '\nNome: ' + nome : '');
+    document.querySelector('#mensagem').textContent = msg;
+    document.querySelector('#enviar').href = wa(msg);
+  };
+  form.addEventListener('click', function(e){
+    var chip = e.target.closest('.chip'); if(!chip) return;
+    form.querySelectorAll('[data-group="'+chip.dataset.group+'"]').forEach(function(i){ i.setAttribute('aria-pressed', String(i === chip)); });
+    upd();
+  });
+  form.addEventListener('input', upd); upd();
+
+  // avaliacao em destaque: separa em palavras e marca as de data-hl (acendem uma a uma)
+  var norm = function(s){ return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,''); };
+  var texto = document.querySelector('.dor .texto');
+  if(texto){
+    var hl = (texto.dataset.hl || '').split(',').map(norm).filter(Boolean);
+    var palavras = texto.textContent.trim().split(/\s+/);
+    texto.textContent = '';
+    palavras.forEach(function(p, i){
+      var s = document.createElement('span');
+      s.className = 'w' + (hl.indexOf(norm(p)) > -1 ? ' hl' : '');
+      s.style.setProperty('--i', i); s.textContent = p;
+      texto.appendChild(s); if(i < palavras.length - 1) texto.appendChild(document.createTextNode(' '));
+    });
+  }
+
+  // nota: o numero final e o proprio texto do <strong> (ex.: 4,7); sem numero valido, nao anima
+  var nota = document.querySelector('.nota-grande strong');
+  if(nota){ var v = parseFloat(nota.textContent.replace(',', '.')); if(!isNaN(v)) nota.dataset.to = v; }
+
+  // revelar ao rolar (so anima o que ainda esta abaixo da dobra)
+  var alvos = document.querySelectorAll('.revelar, .citacao');
+  if('IntersectionObserver' in window && !reduz){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visivel'); io.unobserve(e.target); } }); }, {threshold:.12});
+    alvos.forEach(function(el){ io.observe(el); });
+    var gran = document.querySelector('.nota-grande');
+    if(gran){ var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ conta(e.target.querySelector('[data-to]')); io2.disconnect(); } }); }, {threshold:.6}); io2.observe(gran); }
+  } else {
+    alvos.forEach(function(el){ el.classList.add('visivel'); });
+  }
+  function conta(el){
+    if(!el || reduz) return;
+    var fim = parseFloat(el.dataset.to), t0 = null, dur = 1100;
+    function passo(t){ if(!t0) t0 = t; var p = Math.min((t - t0) / dur, 1), v = fim * (1 - Math.pow(1 - p, 3)); el.textContent = v.toFixed(1).replace('.', ','); if(p < 1) requestAnimationFrame(passo); }
+    requestAnimationFrame(passo);
+  }
+
+  // barra fixa some enquanto o botao principal do topo esta na tela
+  var fix = document.querySelector('.fix'), cta = document.querySelector('.hero-cta .btn.grande');
+  if(fix && cta && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ fix.classList.toggle('oculta', e.isIntersecting); }); }).observe(cta);
+  }
+  document.addEventListener('focusin', function(e){ if(e.target.matches('input,textarea')) body.classList.add('digitando'); });
+  document.addEventListener('focusout', function(e){ if(e.target.matches('input,textarea')) body.classList.remove('digitando'); });
+})();
+</script></body></html>

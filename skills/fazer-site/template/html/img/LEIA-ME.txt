@@ -1,0 +1,18 @@
+Fotos que o index.html espera nesta pasta (JPG). Sem o arquivo, aparece um bloco cinza com o rotulo.
+Foto real do cliente (Instagram, ficha do Google, WhatsApp). Nunca foto de outro cliente.
+
+hero.jpg      1200x900   showroom ou fachada, horizontal (recortada com cantos em diagonal pelo CSS; nunca arredondar)
+item-1.jpg    640x640    quadrada, uma por item do estoque
+item-2.jpg    640x640
+item-3.jpg    640x640
+item-4.jpg    640x640
+item-5.jpg    640x640
+item-6.jpg    640x640
+item-7.jpg    640x640
+item-8.jpg    640x640
+loja1.jpg     900x675    mosaico da loja, bloco grande (a esquerda)
+loja2.jpg     900x415    mosaico, bloco pequeno de cima
+fachada.jpg   900x675    mosaico, bloco pequeno de cima (a direita)
+loja3.jpg     900x675    mosaico, bloco largo de baixo
+
+Comprimir antes de colocar (JPG ate ~150 KB cada). O hero e o unico carregado de imediato (fetchpriority).

@@ -1,0 +1,26 @@
+{
+  "_ajuda": "Use só quando o passeio automático não bastar. Ações: segurar{seg}, esperar{seg} (tempo real, para mapa/vídeo carregar), rolar{para: px|'topo'|'fim'}, secao{alvo, topo}, mover{alvo, seg}, clicar{alvo}, digitar{alvo, texto}. Alvo = seletor Playwright. O script nunca envia formulário nem abre links externos.",
+  "url": "https://exemplo.com.br/",
+  "saida": "site-pc.mp4",
+  "viewport": "1440x900",
+  "passos": [
+    { "acao": "segurar", "seg": 2.5 },
+    { "acao": "mover", "alvo": "header a.btn, header .btn", "seg": 1 },
+    { "acao": "secao", "alvo": "#resultados" },
+    { "acao": "segurar", "seg": 1.5 },
+    { "acao": "secao", "alvo": "#servicos" },
+    { "acao": "mover", "alvo": "#grupo-1 button", "seg": 0.7 },
+    { "acao": "segurar", "seg": 1.5 },
+    { "acao": "secao", "alvo": "#avaliacoes" },
+    { "acao": "segurar", "seg": 1.5 },
+    { "acao": "secao", "alvo": "#agendar" },
+    { "acao": "clicar", "alvo": "text=Pedir orçamento" },
+    { "acao": "digitar", "alvo": "#nome", "texto": "Maria" },
+    { "acao": "segurar", "seg": 1.5 },
+    { "acao": "secao", "alvo": "#chegar" },
+    { "acao": "esperar", "seg": 5 },
+    { "acao": "segurar", "seg": 2.5 },
+    { "acao": "rolar", "para": "topo" },
+    { "acao": "segurar", "seg": 2 }
+  ]
+}

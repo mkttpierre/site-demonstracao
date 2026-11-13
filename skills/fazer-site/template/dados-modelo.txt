@@ -1,0 +1,170 @@
+# Dados do cliente para o personalizar.sh (UTF-8 sem BOM). Uma linha CHAVE=valor por placeholder.
+# Copie este arquivo para clientes/<slug>/dados-site.txt, preencha e rode:
+#   ./personalizar.sh <destino> '#COR' 'Nome do Cliente' --dados clientes/<slug>/dados-site.txt
+# Regras: so dado que o cliente confirmou (identidade.md). Sem aspas, sem quebra de linha. Linha vazia ou com # e ignorada.
+# NOME, MARCA_1 (destaque), MARCA_2 e SIGLA saem do nome informado no comando; so preencha aqui para trocar.
+# MAPS_DESTINO e MAPS_URL saem do nome + endereco; so preencha se o Google Maps pedir outra busca.
+
+# --- Identidade e contato ---
+# WHATSAPP: so digitos, 55 + DDD + numero (ex.: 5511900000000)
+WHATSAPP=
+# TELEFONE: formato tel:, com +55 (ex.: +5511900000000); TELEFONE_EXIBIDO: como aparece na tela
+TELEFONE=
+TELEFONE_EXIBIDO=
+# AUTOR_PREVIA: quem fez a previa (seu nome ou da sua agencia), aparece no selo e no rodape
+AUTOR_PREVIA=
+# INSTAGRAM: so o usuario, sem @ e sem URL
+INSTAGRAM=
+ENDERECO_LINHA1=
+ENDERECO_LINHA2=
+# Titulo grande da secao Como chegar (ex.: rua e numero)
+ENDERECO_TITULO=
+HORARIO_1_DIAS=
+HORARIO_1_HORAS=
+HORARIO_2_DIAS=
+HORARIO_2_HORAS=
+HORARIO_3_DIAS=
+HORARIO_3_HORAS=
+HORARIO_FONTE=
+
+# --- SEO e topo ---
+# TITULO_SEO: descricao curta depois do nome no <title> (ex.: tipo de loja + bairro)
+TITULO_SEO=
+DESCRICAO_SEO=
+# NAV_ESTOQUE: nome do item de menu do estoque (uma palavra)
+NAV_ESTOQUE=
+
+# --- Hero ---
+HERO_LABEL=
+HERO_FRASE=
+HERO_LEAD=
+HERO_ALT=
+CTA_PRINCIPAL=
+CTA_SECUNDARIO=
+# MSG_PRINCIPAL: o que o cliente manda no WhatsApp ao tocar no CTA (a abertura "Ola! Vim pelo site da <NOME>." entra antes)
+MSG_PRINCIPAL=
+HERO_TRIGGER=
+CTA_BARRA=
+# Provas: NOTA no formato 4,7 (vira numero que conta ate o valor); SEGUIDORES ex. 12 mil
+NOTA=
+N_AVALIACOES=
+SEGUIDORES=
+PROVA_3_TITULO=
+PROVA_3_TEXTO=
+# Faixa em movimento: 9 palavras curtas
+FAIXA_1=
+FAIXA_2=
+FAIXA_3=
+FAIXA_4=
+FAIXA_5=
+FAIXA_6=
+FAIXA_7=
+FAIXA_8=
+FAIXA_9=
+
+# --- Estoque (8 itens) ---
+ESTOQUE_LABEL=
+ESTOQUE_TITULO=
+ESTOQUE_SUB=
+BTN_ITEM=
+CTA_LISTA=
+MSG_LISTA=
+# ESTOQUE_FONTE: de onde vieram preco e km, e que podem ter mudado
+ESTOQUE_FONTE=
+# ITEM_n_NOME: marca e modelo; DETALHE: ano e km; PRECO: com R$; ALT: descricao da foto
+ITEM_1_NOME=
+ITEM_1_DETALHE=
+ITEM_1_PRECO=
+ITEM_1_ALT=
+ITEM_2_NOME=
+ITEM_2_DETALHE=
+ITEM_2_PRECO=
+ITEM_2_ALT=
+ITEM_3_NOME=
+ITEM_3_DETALHE=
+ITEM_3_PRECO=
+ITEM_3_ALT=
+ITEM_4_NOME=
+ITEM_4_DETALHE=
+ITEM_4_PRECO=
+ITEM_4_ALT=
+ITEM_5_NOME=
+ITEM_5_DETALHE=
+ITEM_5_PRECO=
+ITEM_5_ALT=
+ITEM_6_NOME=
+ITEM_6_DETALHE=
+ITEM_6_PRECO=
+ITEM_6_ALT=
+ITEM_7_NOME=
+ITEM_7_DETALHE=
+ITEM_7_PRECO=
+ITEM_7_ALT=
+ITEM_8_NOME=
+ITEM_8_DETALHE=
+ITEM_8_PRECO=
+ITEM_8_ALT=
+
+# --- Avaliacao em destaque (sobre a dor/duvida do cliente; texto real do Google) ---
+DOR_LABEL=
+AVALIACAO_DESTAQUE_TEXTO=
+# Palavras que acendem, separadas por virgula, exatamente como aparecem no texto (acento e pontuacao nao importam)
+AVALIACAO_DESTAQUE_PALAVRAS=
+AVALIACAO_DESTAQUE_NOME=
+DOR_CTA=
+DOR_MSG=
+DOR_TRIGGER=
+
+# --- Como a loja trabalha (5 servicos) ---
+SERV_LABEL=
+SERV_TITULO=
+SERV_SUB=
+SERV_1_TITULO=
+SERV_1_TEXTO=
+SERV_2_TITULO=
+SERV_2_TEXTO=
+SERV_3_TITULO=
+SERV_3_TEXTO=
+SERV_4_TITULO=
+SERV_4_TEXTO=
+SERV_5_TITULO=
+SERV_5_TEXTO=
+SERV_CTA=
+SERV_MSG=
+SERV_FONTE=
+
+# --- A loja (mosaico de 4 fotos) ---
+LOJA_LABEL=
+LOJA_TITULO=
+LOJA_SUB=
+LOJA_1_ALT=
+LOJA_2_ALT=
+LOJA_3_ALT=
+LOJA_4_ALT=
+LOJA_FONTE=
+
+# --- Avaliacoes ---
+AVAL_TITULO=
+AVALIACAO_1_TEXTO=
+AVALIACAO_1_NOME=
+AVALIACAO_2_TEXTO=
+AVALIACAO_2_NOME=
+AVAL_CTA=
+AVAL_MSG=
+
+# --- Formulario que monta a mensagem do WhatsApp ---
+CONTATO_LABEL=
+# 4 opcoes de "Quero" e 4 de tipo (a primeira de cada vem marcada)
+INTENCAO_1=
+INTENCAO_2=
+INTENCAO_3=
+INTENCAO_4=
+TIPO_LEGENDA=
+TIPO_1=
+TIPO_2=
+TIPO_3=
+TIPO_4=
+CAMPO_ITEM_LABEL=
+CAMPO_ITEM_EXEMPLO=
+# ITEM_ROTULO: palavra que abre a linha do item na mensagem (ex.: Veiculo)
+ITEM_ROTULO=

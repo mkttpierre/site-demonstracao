@@ -1,0 +1,14 @@
+{
+  "name": "site-demonstracao",
+  "description": "Skills em português para fazer site de negócio local que converte no celular e gravar o vídeo de demonstração.",
+  "owner": {
+    "name": "site-demonstracao"
+  },
+  "plugins": [
+    {
+      "name": "site-demonstracao",
+      "source": "./",
+      "description": "Site no padrão cinematográfico e vídeo de demonstração: sete skills e um template."
+    }
+  ]
+}

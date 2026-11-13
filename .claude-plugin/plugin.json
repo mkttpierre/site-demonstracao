@@ -1,0 +1,17 @@
+{
+  "name": "site-demonstracao",
+  "version": "1.0.0",
+  "description": "Sites e prévias de site para negócio local no padrão cinematográfico, e vídeo de demonstração pronto para mandar ao cliente: sete skills (fazer-site, frontend-design, landing-page-cinematografica, revenue-centric-design, copywriting, adaptar-mobile, gravar-site) e um template.",
+  "homepage": "https://github.com/mkttpierre/site-demonstracao",
+  "repository": "https://github.com/mkttpierre/site-demonstracao",
+  "license": "MIT",
+  "keywords": [
+    "site",
+    "landing-page",
+    "copywriting",
+    "mobile",
+    "conversao",
+    "pt-br",
+    "video"
+  ]
+}
